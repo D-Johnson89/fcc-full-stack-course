@@ -1,0 +1,77 @@
+ /* ===================================
+   CSS RESET & NORMALIZE
+   =================================== */
+
+/* Box model fix */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins/padding */
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ===================================
+   EMAIL
+   =================================== */
+
+#email {
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid rgb(59, 58, 58);
+    width: 500px;
+    background-color: rgb(248, 233, 199);
+    box-shadow: 3px 3px 3px gray;
+}
+
+p {
+    padding: 3px;
+    margin: 4px auto;
+}
+
+/* ===================================
+   STAMPS
+   =================================== */
+
+#confidential,
+#top-secret {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 110px;
+    border: 3px solid red;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#confidential {
+    transform: translateY(-3px) rotate(-12deg);
+    margin-left: 165px;
+}
+
+#top-secret {
+    transform: rotate(12deg);
+}
+
+/* ===================================
+   BLURRS
+   =================================== */
+
+.blurred {
+    filter: blur(3px);
+}

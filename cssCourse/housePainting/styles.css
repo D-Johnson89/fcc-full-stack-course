@@ -1,0 +1,182 @@
+ /* ===================================
+   CSS RESET & NORMALIZE
+   =================================== */
+
+/* Box model fix */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins/padding */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+body {
+  color: #333;
+  height: 100vh;
+  background: linear-gradient(to bottom, lightblue 43%,  rgb(69, 194, 69) 45% 100%);
+}
+
+/* ===================================
+   HOUSE CONTAINER
+   =================================== */
+
+#house {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(47, 202, 202);
+    border: 3px solid grey;
+    top: 35vh;
+    left: 25%;
+    z-index: 0;
+}
+
+/* ===================================
+   CHIMNEY
+   =================================== */
+
+#chimney {
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    background: repeating-linear-gradient(to bottom, grey 0px, grey 10px, #333 10px, #333 15px);
+    border: 3px solid #333;
+    top: -77px;
+    left: 15px;
+    z-index: -1;
+}
+
+/* ===================================
+   ROOF
+   =================================== */
+
+#roof {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 506px;
+    background-color: white;
+    left: -6px;
+    z-index: 1;
+    border:3px solid grey;
+}
+
+#roof::before {
+    content: '';
+    position: absolute;
+    top: -154px;
+    left: -15px;
+    border-left: 266px solid transparent;
+    border-right: 266px solid transparent;
+    border-bottom: 157px solid #333;
+    z-index: -2;
+}
+
+#roof::after {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: -10px;
+    border-left: 260px solid transparent;
+    border-right: 260px solid transparent;
+    border-bottom: 150px solid grey;
+    z-index: -1;
+}
+
+/* ===================================
+   WINDOWS
+   =================================== */
+
+#window-1 {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    background-color: aqua;
+    border: 3px ridge grey;
+    top: 130px;
+    right: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#window-2 {
+    position: absolute;
+    width: 85px;
+    height: 45px;
+    background-color: aqua;
+    border: 3px ridge grey;
+    left: 75px;
+    bottom: 172px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.pane-1 {
+    border-right: 2px inset white;
+    border-bottom: 2px inset white;
+    border-left: 2px ridge grey;
+    border-top: 2px ridge grey;
+}
+
+.pane-2 {
+    border-right: 2px ridge grey;
+    border-bottom: 2px inset white;
+    border-left: 2px inset white;
+    border-top: 2px ridge grey;
+}
+
+.pane-3 {
+    border-right: 2px inset white;
+    border-bottom: 2px ridge grey;
+    border-left: 2px ridge grey;
+    border-top: 2px inset white;
+}
+
+.pane-4 {
+    border-right: 2px ridge grey;
+    border-bottom: 2px ridge grey;
+    border-left: 2px inset white;
+    border-top: 2px inset white;
+}
+
+/* ===================================
+   DOOR
+   =================================== */
+
+#door {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    width: 85px;
+    height: 170px;
+    background-color: white;
+    border: 3px ridge grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 10px;
+    padding: 12px;
+}
+
+.knob {
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    height: 7px;
+    width: 7px;
+    background-color: silver;
+    border: 1px outset grey;
+    border-radius: 10px;
+}
+
+.panel {
+    border: 2px inset whitesmoke;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <!--- Body Container --->
+    <div class="container">
+
+        <h1>Job Application Form</h1>
+
+        <!--- Begining of Form --->
+        <form>
+
+            <!--- Name & Email --->
+            <label class="bold-labels" for="name">Full Name:</label>
+            <input id="name" type="text" name="name" required placeholder="Enter your full name">
+
+            <label class="bold-labels" for="email">Email:</label>
+            <input id="email" type="email" name="email" required placeholder="Enter your email address">
+
+            <!--- Position --->
+            <label class="bold-labels" for="position">Position:</label>
+            <select id="position" name="position" required>
+                <option value>Please choose a position</option>
+                <option value="host">Host</option>
+                <option value="wait-staff">Wait-Staff</option>
+                <option value="cook">Cook</option>
+            </select>
+
+            <!--- Availability --->
+            <fieldset class="radio-group">
+                <legend>Availability:</legend>
+                <input id="full-time" name="availability" type="radio">
+                <label for="full-time">Full-Time</label>
+                <input id="part-time" name="availability" type="radio">
+                <label for="part-time">Part-Time</label>
+            </fieldset>
+
+            <!--- Text Area --->
+            <label class="bold-labels" for="message">Why would you be a good fit for this position?</label>
+            <textarea id="message" name="message" required placeholder="Tell us why you think youd be a great fit for this company..." rows="5"></textarea>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </div>
+</body>
+</html>
