@@ -1,0 +1,159 @@
+/* ===================================
+   VARIABLES
+   =================================== */
+
+
+/* Custom colors and borders */
+:root {
+    --color0: #ffffff;
+    --color1: #b3ecff;
+    --color2: #66d9ff;
+    --color3: #1ac6ff;
+    --color4: #0099cc;
+    --color5: #006080;
+
+    --solid-border: 0.1em solid #2e2d2d;
+    --dashed-border: .09em dashed #2e2d2d;
+}
+
+/* ===================================
+   CSS RESET & NORMALIZE
+   =================================== */
+
+/* Box model fix */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins/padding */
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #e6f9ff;
+  font-size: 16px;
+}
+
+.main-container {
+    width: 100%;
+    text-align: center;
+    padding: 4rem;
+}
+
+.table-container {
+    width: clamp(50vw, 65vw, 75vw);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+tr {
+    height: 1.1rem;
+}
+
+td {
+    border-left: var(--solid-border);
+    border-right: var(--solid-border);
+}
+
+/* ===================================
+   AVAILABILTY TABLE BORDERS
+   =================================== */
+
+table {
+    width: 35rem;
+    height: 15rem;
+    margin-bottom: 3rem;
+    border-collapse: collapse;
+}
+
+tr[class="sharp"] > th {
+    border-bottom: var(--solid-border);
+}
+
+tr[class="sharp"] :first-child {
+    border-bottom: none;
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
+
+/* ===================================
+   AVAILABILTY TABLE CELLS
+   =================================== */
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+/* ===================================
+   LEGEND LINE
+   =================================== */
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
+}
+
+#legend span {
+    width: 5rem;
+    height: 2rem;
+}
+
+#legend-line {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    margin: 0.3rem;
+}
+
+#legend-line span {
+    width: 4rem;
+    height: 2rem;
+}
+
+#legend-gradient {
+    width: 100%;
+    height: 65%;
+    border: var(--solid-border);
+    background-image: linear-gradient(to right, var(--color0) 0% 17%, var(--color1) 17% 34%, var(--color2) 34% 50%, var(--color3) 50% 67%, var(--color4) 67% 83%, var(--color5) 83% 100%);
+}
