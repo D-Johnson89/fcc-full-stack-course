@@ -1,0 +1,70 @@
+/* ===================================
+   CSS RESET & NORMALIZE
+   =================================== */
+
+/* Box model fix */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins/padding */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styling reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ===================================
+   NEWSPAPER LAYOUT
+   =================================== */
+
+
+
+/* ===================================
+   HEADER
+   =================================== */
+
+
+
+/* ===================================
+   FEATURE ARTICLE
+   =================================== */
+
+
+
+/* ===================================
+   MEDIA QUERIES
+   =================================== */
+
+@media (min-width: 768px) {
+  /* Tablet adjustments */
+  
+}
+
+@media (min-width: 1024px) {
+  /* Desktop adjustments */
+  
+}
