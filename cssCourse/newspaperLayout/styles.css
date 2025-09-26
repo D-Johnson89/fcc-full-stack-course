@@ -1,4 +1,15 @@
 /* ===================================
+   VARIABLES
+   =================================== */
+
+:root {
+    --bg-color1: #cccccc;
+    --bg-color2: #a6a6a6;
+    --bg-color3: #808080;
+    --bg-color4: #003399;
+}
+
+/* ===================================
    CSS RESET & NORMALIZE
    =================================== */
 
@@ -34,26 +45,41 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #333;
-  background-color: #fff;
+  background-color: var(--bg-color1);
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+    width: 90%;
+    height: 100%;
+    margin: 3rem auto;
 }
 
 /* ===================================
    NEWSPAPER LAYOUT
    =================================== */
 
+.newspaper-layout {
+    display: grid;
+}
 
 
 /* ===================================
    HEADER
    =================================== */
 
-
+.title {
+    grid-area: header;
+}
 
 /* ===================================
    FEATURE ARTICLE
    =================================== */
 
-
+.feature-article {
+    grid-area: feature;
+}
 
 /* ===================================
    MEDIA QUERIES
