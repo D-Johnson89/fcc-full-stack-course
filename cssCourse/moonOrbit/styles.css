@@ -52,10 +52,12 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    top: 50px;
-    left: 50px;
     border-radius: 50%;
     background-color: rgb(84, 223, 223);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15PX rgb(4, 173, 173);
 }
 
 /* ===================================
@@ -66,7 +68,8 @@ body {
     width: 200px;
     height: 200px;
     position: absolute;
-
+    transform: translate(-50%, -50%);
+    animation: orbit 5s linear infinite;
 }
 
 /* ===================================
@@ -79,18 +82,22 @@ body {
     height: 30px;
     border-radius: 50%;
     background-color: rgb(197, 193, 186);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px rgb(216, 197, 165);
 }
 
 /* ===================================
    MEDIA QUERIES
    =================================== */
 
-@media (min-width: 768px) {
-  /* Tablet adjustments */
-  
-}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
 
-@media (min-width: 1024px) {
-  /* Desktop adjustments */
-  
+    100% {
+        transform: rotate(360deg) translate(-50%, -50%);
+    }
 }
