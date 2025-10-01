@@ -1,0 +1,96 @@
+/* ===================================
+   CSS RESET & NORMALIZE
+   =================================== */
+
+/* Box model fix */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins/padding */
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+     display: block;
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.imgur.com/Txjpjia.jpeg);
+}
+
+/* ===================================
+   SPACE
+   =================================== */
+
+.space {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+}
+
+/* ===================================
+   EARTH
+   =================================== */
+
+.earth {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    background-color: rgb(84, 223, 223);
+}
+
+/* ===================================
+   ORBIT
+   =================================== */
+
+.orbit {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+
+/* ===================================
+   MOON
+   =================================== */
+
+.moon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(197, 193, 186);
+}
+
+/* ===================================
+   MEDIA QUERIES
+   =================================== */
+
+@media (min-width: 768px) {
+  /* Tablet adjustments */
+  
+}
+
+@media (min-width: 1024px) {
+  /* Desktop adjustments */
+  
+}
